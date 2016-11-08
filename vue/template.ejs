@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../lib/talkie.min.css">
+  <link rel="stylesheet" href="../lib/talkie-default.min.css">
+  <link rel="stylesheet" href="../monokai_sublime.min.css">
+</head>
+<body>
+
+<% pages.forEach((page) => { %>
+<<%- page.tag %> type="<%- page.type %>"<% page.attributes.forEach((attributes) => { %>
+  <%- attributes -%>
+<% }) -%>>
+<%- page.contents %>
+<% if(page.note) { -%>
+---
+
+<%- page.note %>
+<% } %>
+</<%- page.tag %>>
+<% }) %>
+<script src="../highlight.min.js"></script>
+<script src="../lib/talkie.min.js"></script>
+<script src="../lib/app.js"></script>
+</body>
+</html>
