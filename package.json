@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "lint": "textlint",
+    "talkie": "talkie"
+  },
+  "dependencies": {
+    "talkie-generator": "^0.0.4",
+    "textlint": "^7.1.2",
+    "textlint-plugin-html": "^0.1.4",
+    "textlint-rule-prh": "^3.1.2"
+  }
+}
