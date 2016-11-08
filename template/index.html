@@ -11,8 +11,10 @@
 
 <template layout="cover" type="text/x-markdown">
 # Title
+
 <hr>
-のーとになるはず
+
+のーと
 
 </template>
 
@@ -23,6 +25,7 @@ backface-filter="blur(3px) brightness(.5)">
 </template>
 
 <template layout="code" type="text/x-markdown">
+## Code
 
 ```javascript
 var hoge = 'hoge'
@@ -33,27 +36,12 @@ console.log(hoge)
 </template>
 
 <template layout="bullets" type="text/x-markdown">
-## 1st Day Table
+## hoge
 
 </template>
 
 <script src="../lib/highlight.min.js"></script>
 <script src="../lib/talkie.min.js"></script>
-<script>
-  var talkie = Talkie({
-    wide: false
-  })
-  talkie.key('space').subscribe(talkie.next$)
-  talkie.key('s').subscribe(talkie.next$)
-  talkie.key('n').subscribe(talkie.next$)
-  talkie.key('a').subscribe(talkie.prev$)
-  talkie.key('p').subscribe(talkie.prev$)
-
-  document.addEventListener('DOMContentLoaded', function() {
-    talkie.changed.subscribe(function(current) {
-      console.info(talkie.notes[current.getAttribute('page')])
-    })
-  })
-</script>
+<script src="../lib/app.js"></script>
 </body>
 </html>
