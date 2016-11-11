@@ -1,17 +1,41 @@
 module.exports = {
+  defaults: {
+    attributes: {
+      layout: 'bullets'
+    }
+  },
   pages: [
     {
+      name: 'top',
       attributes: {
-        layout: 'cover',
-        invert: '',
-        backface: './img/bg.png',
-        backfaceFilter: 'blur(2px) brightness(1.5)'
+        layout: 'title',
+        backface: './img/vue.png',
+        backfaceFilter: 'blur(2px) opacity(.1)'
       },
       note: ''
     },
     {
+      name: 'cover-vue',
       attributes: {
-        layout: 'bullets'
+        layout: 'cover',
+        // invert: true,
+        backface: './img/progressive.png',
+        backfaceFilter: 'blur(0px) opacity(1)'
+      }
+    },
+    {
+      name: 'cover-progressive',
+      attributes: {
+        layout: 'cover',
+        // invert: true,
+        backface: './img/progressive.png',
+        backfaceFilter: 'blur(0px) opacity(1)'
+      }
+    },
+    {
+      name: 'code',
+      attributes: {
+        layout: 'code',
       }
     }
   ]
