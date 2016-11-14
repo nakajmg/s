@@ -13,8 +13,9 @@
 
 <template type="text/x-markdown"
 layout="title"
-backface="./img/vue.png"
-backface-filter="blur(2px) opacity(.1)">
+backface-size="contain"
+backface-filter="blur(2px) opacity(.1)"
+backface="./img/vue.png">
 # Vueとか
 
 2016/11/19 - 静岡JavaScript勉強会 #4 [@nakajmg](https://twitter.com/nakajmg)
@@ -43,13 +44,15 @@ nakajmgというidで活動しています。
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(1px) opacity(.1)"
+backface="./img/logo.png">
+## Vue.jsについてはなします
 
-# はなすこと
-
-- Vue.jsについて
 - Vue.jsのいいところ
 - サポートライブラリ/ツール
+- そのほか
 
 ---
 .
@@ -60,15 +63,10 @@ layout="bullets">
 </template>
 
 <template type="text/x-markdown"
-layout="cover"
-backface="./img/progressive.png"
-backface-filter="blur(0px) opacity(1)">
-
-
-</template>
-
-<template type="text/x-markdown"
-layout="bullets">
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(1px) opacity(.1)"
+backface="./img/logo.png">
 
 # Vue.jsについて
 
@@ -102,19 +100,23 @@ HTML上にはインプットボックスと、その内容を出力するタグ�
 
 <template type="text/x-markdown"
 layout="code">
-```js
-new Vue({\
-  el: '#app',
-  template: `<div>
-    <p><input v-model="message"></p>
-    <p>{{message}}</p>
-  </div>`,
-  data() {
-    return {
-      message: 'Hello Vue.js'
+```html
+<div id="app"></div>
+<script src="./vue.js"></script>
+<script>
+  new Vue({\
+    el: '#app',
+    template: `<div>
+      <p><input v-model="message"></p>
+      <p>{{message}}</p>
+    </div>`,
+    data() {
+      return {
+        message: 'Hello Vue.js'
+      }
     }
-  }
-})
+  })
+</script>
 ```
 
 ---
@@ -127,16 +129,20 @@ new Vue({\
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
-
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/pose_english_amazing_man.png">
 # Vue.jsのいいところ
 
 
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
-
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/mark_syoshinsya.png">
 # とにかくシンプル
 
 * 学習コストが低い
@@ -150,24 +156,28 @@ Vue.jsを使う上では、JSXのような特別なシンタックスを覚え�
 
 直感的に書けるということも大事で、学習コストもそうなんですが、何より気持ちよく書けるかどうか、そこが重要です。
 
-そして自然とコードが綺麗な状態を保てます。Vue.jsではどこで何をさせるべきか、どこで何をさせないべきかという指針が、APの設計に埋め込まれています。しかし、それでも十分な柔軟性を持っているので、窮屈さを感じることはありません。
+そして自然とコードが綺麗な状態を保てます。Vue.jsではどこで何をさせるべきか、どこで何をさせないべきかという指針が、APIの設計に埋め込まれています。しかし、それでも十分な柔軟性を持っているので、窮屈さを感じることはありません。
 
 
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
-
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/mark_syoshinsya.png">
 ## 学習コストが低いということ
 
-マッチョな人たちには軽視されがちだが、走る前の/走ってるプロジェクトにアサインされる人の負担が小さいことに越したことはない。
+マッチョな人たちには軽視されがちだが、走る前の/走ってるプロジェクトにアサインされる人の負担が小さいことに越したことはない
 
 
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
-
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/yurusu_houyouryoku.png">
 ## どんな規模にも対応できる<br>フレームワーク
 
 ---
@@ -179,10 +189,81 @@ Vue.jsがどんな規模のアプリケーションにも対応できるフレ�
 </template>
 
 <template type="text/x-markdown"
-layout="cover"
-backface="./img/progressive.png"
-backface-filter="blur(0px) opacity(1)">
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/kaeru4_shippo.png"
+invert="true">
+## アプリケーションは成長する
 
+技術選定において、アプリケーションの初期の要求だけでなく、その後の段階的な要求に応えられるフレームワークを選ぶ必要がある
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/hanashiai_business_man.png">
+
+### 要件に合わせて拡張・変更したい…
+
+🤔「この追加要件に応えるならクライアントで<br>ルーティングしてシングルステートな感じでモジュールをほかでも使いまわせるようにしたほうがヨサソウ」
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/kibunwarui_man.png">
+
+### 要件に対応できないフレームワークだと…
+
+😩「今使ってるフレームワークだとめちゃくちゃめんどくさ厳しいしそもそも対応できるのかあやしいぞ🌞」
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="bullets"
+invert="true">
+## Vue.js単体では<br>小規模なSPAぐらいまで
+
+- 😄 キャンペーンサイト（LP）
+- 😉 小規模SPA
+- 😫 中規模SPA
+- 👺 大規模SPA
+
+---
+
+最初に紹介したとおり、Vue.jsはViewに特化したライブラリで、ここにあげているようなコンポーネントやキャンペーンサイト、小規模なシングルページアプリケーションぐらいまでしか適していません。
+Vue.js単体にこれ以上を求めると火が出て死人が出るかもしれません。
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/mark_question.png">
+## あらゆる規模に対応？<br>どうやって？
+
+---
+ではどうやってVue.jsであらゆる規模に対応するのか。
+Vue.jsのトップページを見てみましょう。
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="cover"
+backface-size="contain"
+backface-filter="blur(0px) opacity(1)"
+invert="true"
+backface="./img/progressive.png">
 
 ---
 
@@ -194,59 +275,38 @@ Vue.jsのトップページを見ると「Progressive Framework」という単�
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+invert="true"
+backface="./img/taiiku_bridge.png">
+## Progressive Framework
 
-## Progressive Frameworkとは
-
-アプリケーションの段階的な要求の変化に対応できて、規模に合わせて必要なだけ拡張/縮小できる柔軟性を持つフレームワーク。
+アプリケーションの段階的な要求の変化に対応できて<br>規模に合わせて必要なだけスケールできる柔軟性を持つフレームワーク
 
 参考: [Vue.js: The Progressive Framework](https://docs.google.com/presentation/d/1WnYsxRMiNEArT3xz7xXHdKeH1C-jT92VxmptghJb5Es/edit#slide=id.p)
 
 ---
 
 プログレッシブフレームワークとは、「アプリケーションの段階的な要求の変化に対応できて、規模に合わせて必要なだけ拡張/縮小できる柔軟性を持つフレームワーク」です。
+アプリケーションは作って終わりということはなく、運用を続けて機能の追加などが行われます。
+ときとして最初の要求とは全く異なる要求が出てきて「このフレームワークだとそれに応えるのは難しい（めんどくさい）かも…」といった状況に陥りがちです。
+
 作者のEvan氏のプレゼン資料に、プログレッシブフレームワークの概念についての説明がありますので、興味のあるかたは目を通してみてください。
 
-
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/kougu_bako.png">
+### Vue.jsをサポートする<br>ライブラリ/ツールを使って対応する
 
-## Vue.js単体では<br>小規模なSPAぐらいまで
-
-- コンポーネント
-- キャンペーンサイト
-- SPA（小規模）
-
----
-
-最初に紹介したとおり、Vue.jsはViewに特化したライブラリで、ここにあげているようなコンポーネントやキャンペーンサイト、小規模なシングルページアプリケーションぐらいまでしか適していません。
-Vue.js単体にこれ以上を求めると火が出て死人が出るかもしれません。
-
-
-</template>
-
-<template type="text/x-markdown"
-layout="bullets">
-
-## あらゆる規模に対応？<br>どうやって？
-
----
-
-ではどうやってVue.jsであらゆる規模に対応するのか、それにはVue.jsが公式で提供しているライブラリやツールを使います。
-
-
-</template>
-
-<template type="text/x-markdown"
-layout="bullets">
-
-## Vue.jsをサポートする<br>ライブラリ/ツールを使う
-
-- [vue-router](https://github.com/vuejs/vue-router)
-- [vuex](https://github.com/vuejs/vuex)
-- [vue-loader](https://github.com/vuejs/vue-loader)/[vueify](https://github.com/vuejs/vueify)
+- ルーティング：[vue-router](https://github.com/vuejs/vue-router)
+- 状態管理：[vuex](https://github.com/vuejs/vuex)
+- コンポーネント： [vue-loader](https://github.com/vuejs/vue-loader)/[vueify](https://github.com/vuejs/vueify)
+- そのほか色々…
 
 ---
 
@@ -258,29 +318,46 @@ vue-loaderとvueifyは規模が大きくなるにつれて複雑になりがち�
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
-
-## 公式が提供している安心感
-
-Vue.js本体のアップデートにライブラリ/ツールも追従してサポートが続く。（これまでの対応を見る限り、本体の更新とほぼ同時に更新されている）
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/kougu_bako.png">
+## 公式のライブラリ/ツールが<br>充実している
 
 
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/pose_anshin_man.png">
+## 公式サポートの安心感
 
+Vue.js本体のアップデートにライブラリ/ツールも追従してサポートが続く（ほとんどが本体の更新に遅れることなく同時に更新される）
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/mark_question.png">
 ## 結局なんやかんや色々と<br>覚えないといけないのでは？
 
 
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
+layout="title"
+backface-size="contain"
+backface-filter="opacity(.2)"
+backface="./img/tatemono_kaidan.png"
+invert="true">
 
 ## 必要なものを<br>必要なときに覚える
-
-全部をいっぺんに覚える必要はない。使うものを必要なときに導入し、その都度覚えていけばいい。
+最初から全部をいっぺんに覚える必要はない。使うものを必要なときに導入し、その都度覚えていけばいい
 
 ---
 
@@ -292,9 +369,11 @@ Vue.jsの場合、アプリケーションの規模によって何を使い、�
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
-
-## 整備されたドキュメントがある
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/setsumeisyo_man.png">
+## 整備されたドキュメント
 
 - [vuejs/Guide](http://vuejs.org/v2/guide/)
 - [vuejs/API](http://vuejs.org/v2/api/)
@@ -311,11 +390,13 @@ Vue.jsは関連するライブラリやツールを含め、とにかくドキ�
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
-
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/setsumeisyo_man.png">
 ## まずはガイドを読もう
 
-Vue.jsがどういうものかは、すべて[公式のガイド](http://vuejs.org/v2/guide/)に詰め込まれています。
+Vue.jsがどういうものか、どう使えばいいかは<br>[公式のガイド](http://vuejs.org/v2/guide/)に詰め込まれてる
 
 
 </template>
