@@ -22,6 +22,12 @@ module.exports = {
       }
     },
     {
+      name: 'table',
+      attributes: {
+        layout: ''
+      }
+    },
+    {
       name: 'top',
       attributes: bg({
         backface: './img/vue.png',
@@ -139,6 +145,63 @@ module.exports = {
         backface: './img/mark_syoshinsya.png',
         // backfaceSize: 'cover',
         layout: 'bullets',
+        // invert: true,
+      })
+    },
+    {
+      name: 'okane',
+      attributes: bg({
+        backface: './img/money_tokeru_yen.png',
+        backfaceFilter: 'opacity(.2)',
+        layout: 'title',
+        invert: true,
+      })
+    },
+    {
+      name: 'hayai',
+      attributes: bg({
+        backface: './img/ninja_hashiru.png',
+        layout: 'title',
+        // invert: true,
+      })
+    },
+    {
+      name: 'cover-hayai',
+      attributes: bg({
+        backface: './img/ninja_hashiru.png',
+        backfaceSize: 'cover',
+        layout: 'table',
+        // invert: true,
+      })
+    },
+    {
+      name: 'power',
+      attributes: bg({
+        backface: './img/robot_suit.png',
+        layout: 'title',
+        backfaceFilter: 'opacity(.3)'
+        // invert: true,
+      })
+    },
+    {
+      name: 'nihon',
+      attributes: bg({
+        backface: './img/sensu_hinomaru.png',
+        layout: 'title',
+      })
+    },
+    {
+      name: 'karui',
+      attributes: bg({
+        backface: './img/hitsuji_youmougari.png',
+        layout: '',
+      })
+    },
+    {
+      name: 'super',
+      attributes: bg({
+        backface: './img/superman_hero.png',
+        layout: 'title',
       })
     },
   ]
