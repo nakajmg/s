@@ -20,6 +20,11 @@ gulp.task('default', (cb) => {
       persistent: true
     })
     .on('change', (path, stats) => {
-      talkie(`./${path.split('/')[0]}`)
+      try {
+        talkie(`./${path.split('/')[0]}`)
+      }
+      catch(e) {
+        console.log(e.message)
+      }
     })
 })
