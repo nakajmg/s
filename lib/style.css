@@ -1,3 +1,31 @@
 [layout] {
   box-shadow: none;
 }
+[layout] > * {
+  margin: 20px 100px;
+}
+[layout] td, [layout] th {
+  font-size: 1.8em;
+  padding: 0.4em 0.6em;
+}
+
+[layout="table"] table {
+  background-color: #fff;
+  margin: 0px 100px 10px;
+}
+
+[layout] blockquote {
+  margin: 5px 100px 0;
+}
+
+[layout] blockquote:before {
+  font-size: 1.5em;
+}
+[layout] blockquote:after {
+  position: absolute;
+  bottom: -1.1em;
+  right: -.4em;
+  font-size: 1.5em;
+  content: "\"";
+}
+
