@@ -35,6 +35,15 @@ nakajmgというidで活動しています。
 まずVue.jsがどういうフレームワークであるか、次にVue.jsのここがいいというポイントを、そしてVueをサポートするツールやライブラリついて簡単に紹介します。
 
 -----
+<!--target-->
+# こんな人におすすめ
+
+- jQueryの次にいきたい人
+- ほかの言語がメインの人
+- フロントエンドに疲れた人
+
+
+-----
 <!--cover-vue-->
 
 # Vue.jsについて
@@ -60,7 +69,7 @@ Vue.jsはUIを組み立てるViewの部分に特化したライブラリです�
 
 - 🔰 APIが理解しやすい
 - 😆 直感的に書ける（__気持ちいい__）
-- ✨ コードが綺麗な状態を保てる ✨
+- ✨ コードがきれいな状態を保てる ✨
 
 ---
 
@@ -69,11 +78,14 @@ Vue.jsを使う上では、JSXのような特別なシンタックスを覚え�
 
 直感的に書けるということも大事で、学習コストもそうなんですが、何より気持ちよく書けるかどうか、そこが重要です。
 
-そして自然とコードが綺麗な状態を保てます。Vue.jsではどこで何をさせるべきか、どこで何をさせないべきかという指針が、APIの設計に埋め込まれています。しかし、それでも十分な柔軟性を持っているので、窮屈さを感じることはありません。
+そして自然とコードがきれいな状態を保てます。Vue.jsではどこで何をさせるべきか、どこで何をさせないべきかという指針が、APIの設計に埋め込まれています。しかし、それでも十分な柔軟性を持っているので、窮屈さを感じることはありません。
 -----
-
 <!--code-->
-<!-- <iframe height='400' scrolling='no' title='Vue.js' src='//codepen.io/nakajmg/embed/jVWwKW/?height=400&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/nakajmg/pen/jVWwKW/'>Vue.js</a> by nakajmg (<a href='http://codepen.io/nakajmg'>@nakajmg</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe> -->
+<iframe src="./demo/hello/index.html" width="600px" height="400px">
+</iframe>
+
+[demo/hello](./demo/hello/index.html)
+
 
 ---
 .
@@ -104,7 +116,7 @@ HTML上にはインプットボックスと、その内容を出力するタグ�
 
 ---
 
-このデモのコードとしてはこれで全てです。
+このデモのコードとしてはこれですべてです。
 わずか十数行でデモのようなリアクティブなプログラムが実装できてしまいます。
 このコード、目を通したら何が何をやっているか、なんとなく理解できてしまいませんか？
 これは正にVue.jsのシンプルさを表していて、（JavaScriptに限らず）プログラムが読める人であればすぐに使い始められるフレームワークだと思います。
@@ -122,7 +134,8 @@ HTML上にはインプットボックスと、その内容を出力するタグ�
 <!--wakaba-->
 ## 学習コストが低いということ
 
-ときとして軽視されがちだが、走る前の/走ってる<br>プロジェクトにアサインされる人の負担が小さいことに越したことはない
+ときとして軽視されがちだが、走る前の/走ってる  
+プロジェクトにアサインされる人の負担が小さいことに越したことはない
 
 -----
 <!--power-->
@@ -133,7 +146,7 @@ HTML上にはインプットボックスと、その内容を出力するタグ�
 <!--hayai-->
 # 軽くて速い
 
-[ほかのフレームワークとの比較](https://vuejs.org/v2/guide/comparison.html)
+<small>参考：[ほかのフレームワークとの比較](https://vuejs.org/v2/guide/comparison.html)</small>
 
 -----
 <!--cover-hayai-->
@@ -177,7 +190,8 @@ Angular 2 + Rx             | **143K**
 
 ## 本当に強いの❓
 
-🤔「他のフレームワークより軽くて速いのはわかった<br>けどAngularはフルスタックで対応力にすぐれてるよ。Vue.jsは同じ土俵に立てるの？」
+🤔「他のフレームワークより軽くて速いのはわかった  
+けどAngularはフルスタックで対応力にすぐれてるよ。Vue.jsは同じ土俵に立てるの？」
 
 
 -----
@@ -214,7 +228,8 @@ Vue.jsがどんな規模のアプリケーションにも対応できるフレ�
 
 ## 初期の技術選定が<br>サービスの成長に影響する
 
-初期の要求だけに合わせてフレームワークを選ぶと<br>のちのち苦労することになりかねない。将来的な要求の変化に対応できるフレームワーク選びが重要
+初期の要求だけに合わせてフレームワークを選ぶと  
+のちのち苦労することになりかねない。将来的な要求の変化に対応できるフレームワーク選びが重要☝🏻
 
 -----
 <!--important-->
@@ -251,25 +266,27 @@ Vue.jsのトップページを見ると「Progressive Framework」という単�
 <!--juunan-->
 ## Progressive Framework
 
-アプリケーションの段階的な要求の変化に対応して<br>そのときの規模に合わせて必要なだけスケールできる柔軟性を持つフレームワーク
+アプリケーションの段階的な要求の変化に対応して  
+そのときの規模に合わせて必要なだけスケールできる柔軟性をもつフレームワーク
 
 参考: [Vue.js: The Progressive Framework](https://docs.google.com/presentation/d/1WnYsxRMiNEArT3xz7xXHdKeH1C-jT92VxmptghJb5Es/edit#slide=id.p)
 
 ---
 
-プログレッシブフレームワークとは、「アプリケーションの段階的な要求の変化に対応できて、規模に合わせて必要なだけ拡張/縮小できる柔軟性を持つフレームワーク」です。
+プログレッシブフレームワークとは、「アプリケーションの段階的な要求の変化に対応できて、規模に合わせて必要なだけ拡張/縮小できる柔軟性をもつフレームワーク」です。
 アプリケーションは作って終わりということはなく、運用を続けて機能の追加などが行われます。
 ときとして最初の要求とは全く異なる要求が出てきて「このフレームワークだとそれに応えるのは難しい（めんどくさい）かも…」といった状況に陥りがちです。
 
 作者のEvan氏のプレゼン資料に、プログレッシブフレームワークの概念についての説明がありますので、興味のあるかたは目を通してみてください。
 -----
 <!--tool-->
-### Vue.jsをサポートする<br>ライブラリ/ツールを使って対応する
+### Vue.jsをサポートする<br>ライブラリ/ツールを使って対応
 
 - ルーティング：[vue-router](https://github.com/vuejs/vue-router)
 - 状態管理：[vuex](https://github.com/vuejs/vuex)
-- ビルドシステム： [vue-loader](https://github.com/vuejs/vue-loader)/[vueify](https://github.com/vuejs/vueify)
-- そのほか色々…
+- ビルドシステム：[vue-loader](https://github.com/vuejs/vue-loader)/[vueify](https://github.com/vuejs/vueify)
+- デバッグ：[vue-devtools](https://github.com/vuejs/vue-devtools)
+- そのほか色々… 👉 [awesome-vue](https://github.com/vuejs/awesome-vue)
 
 ---
 
@@ -285,7 +302,8 @@ vue-loaderとvueifyは規模が大きくなるにつれて複雑になりがち�
 <!--annsin-->
 ## 公式サポートという安心感
 
-Vue.js本体のアップデートにライブラリ/ツールも追従してサポートが続く（ほとんどが本体の更新に遅れることなく同時に更新されている）
+Vue.js本体のアップデートにライブラリ/ツールも追従  
+してサポートが続く。サードパーティ製ライブラリだとアップデートに追従できない可能性がある☝🏻
 
 -----
 <!--hatena-->
@@ -295,20 +313,22 @@ Vue.js本体のアップデートにライブラリ/ツールも追従してサ�
 
 ## 必要なものを<br>必要なときに覚える
 <!--kaidan-->
-全部を覚える必要はない。要件に応じて使うものを必要なときに導入し、その都度覚えればいい
+全部を覚える必要はない。要件に応じて使うものを必要なときに導入し、その都度覚えればいい☝🏻
 
 ---
 
-AngularJSのようなフルスタックと呼ばれるようなフレームワークの場合、使うのに必要な学習コストは機能と比例して高くなります。これはその機能がいる・いらないに関わらずフレームワークの全体像を理解する必要があるからです。
+AngularJSのようなフルスタックと呼ばれるようなフレームワークの場合、使うのに必要な学習コストは機能と比例して高くなります。これはその機能がいる・いらないにかかわらずフレームワークの全体像を理解する必要があるからです。
 
 Vue.jsの場合、アプリケーションの規模によって何を使い、何を使わないか柔軟に選択できます。選択したものを選択したときに覚えればよいのです。
 
 -----
 <!--guide-->
-## まずはガイドを読もう
+# まずはガイドを読もう
 
-Vue.jsがどういうものか、どう使えばいいかは<br>[公式のガイド](http://vuejs.org/v2/guide/)に詰め込まれてる
+Vue.jsがどういうものか、どう使えばいいかは  
+[公式のガイド](http://vuejs.org/v2/guide/)に詰め込まれている☝🏻
 
+<small>[(日本語訳は公開目前)](https://github.com/vuejs/jp.vuejs.org/tree/lang-ja-2.0/src/v2/guide)</small>
 -----
 <!--guide-->
 ## 整備されたドキュメント
@@ -333,25 +353,198 @@ Vue.jsは関連するライブラリやツールを含め、とにかくドキ�
 - [日本ユーザー向けグループ](https://vuejs-jp-slackin.herokuapp.com/)（Slack）がある
 
 -----
-
+<!--super-->
 ## コミュニティが強いOSSは強い
 
 -----
+<!--tool-->
+## ライブラリ/ツールが充実
 
-## vuexで状態管理
+-----
+<!--bg-vuex-->
+## [Vuex](https://github.com/vuejs/vuex)
+
+- FluxとかRedux for Vue.js
+- アプリケーションの状態を一元的に管理
+- アプリケーションの複雑性を解消するため
+
+-----
+<!--vuex-->
+
+<blockquote>
+<a href="https://raw.githubusercontent.com/vuejs/vuex/dev/docs/en/images/vuex.png">vuejs/vuex/dev/docs/en/images/vuex.png</a>
+</blockquote>
+
+-----
+<!--bg-vuex-->
+
+## Vuexの効能
+
+- データフローが一方向に
+- 信頼できる唯一の情報源 (single source of truth)
+- コンポーネント同士のやりとりが不要に
+- 状態変更が明示的かつ追跡可能に 👉 ✨vue-devtools✨
+
+-----
+<!--bg-vuex-invert-->
+
+## 中規模以上のSPAで使おう
+
+規模の小さなアプリケーションにVuexを導入すると冗長であまり効果のない制約を生み出すことに。  
+[シンプルなイベントバスの仕組み](https://vuejs.org/v2/guide/components.html#Non-Parent-Child-Communication)でも十分機能する☝🏻
+
+-----
+<!--devtools-->
+## [vue-devtools](https://github.com/vuejs/vue-devtools)
+
+- コンポーネントの状態確認
+- ルーティングの状態確認（vue-router）
+- 状態変化の追跡とタイムトラベル（vuex）
+
+-----
+<!--code-->
+
+<iframe src="./demo/vuex/index.html" width="600px" height="400px">
+</iframe>
+
+[demo/vuex](./demo/vuex/index.html)
+
+-----
+<!--devtools-->
+### コンポーネントの状態確認
+
+![](./img/devtools_component.png)
+
+-----
+<!--devtools-->
+### Storeの状態変化の追跡とタイムトラベル
+
+![](./img/devtools_vuex.png)
 
 -----
 
-## vue-cliでサクサク
+## [vue-loader](https://github.com/vuejs/vue-loader)/[vueify](https://github.com/vuejs/vueify)
+
+- webpack/Browserifyでバンドル
+- 1コンポーネント1ファイル（.vue）
+
+-----
+<!--code-->
+
+.vue
+```html
+<template>
+  <div class="my-component"><span>{{message}}</span></div>
+</template>
+<style lang="scss" scoped>
+  .my-component {
+    color: tomato;
+    span { border: 1px solid #000; }
+  }
+</style>
+<script>
+  export default {
+    data() { return { message: 'Hello!!' } }
+  }
+</script>
+```
 
 -----
 
-## vue-loader/vueifyで.vue
+## .vueファイル
+
+- JS：ES2015で書ける（babel）
+- CSS：プリプロセッサ（Sass/Stylus）が使える
+- Hot Module Replacement（HMR、差分更新）
+
+-----
+<!--code-->
+CSS Modulesも使える
+
+```html
+<style module>
+  .red {
+    color: red;
+  }
+  .bold {
+    font-weight: bold;
+  }
+</style>
+
+<template>
+  <p :class="$style.red">
+    This should be red
+  </p>
+</template>
+```
 
 -----
 
-## vue-devtools
+## [vue-cli](https://github.com/vue-cli)
+
+- スキャフォールド用のコマンドラインツール
+- vue-loader/vueifyの環境構築
+- `$ vue init webpack awesome-project`
 
 -----
+<!--code-->
 
+```shell
+$ vue init webpack awesome-project
+
+? Project name awesome-project
+? Vue build standalone
+? Use ESLint to lint your code? Yes
+? Pick an ESLint preset AirBNB
+? Setup unit tests with Karma + Mocha? Yes
+? Setup e2e tests with Nightwatch? Yes
+
+   vue-cli · Generated "awesome-project".
+
+   To get started:
+   
+     cd awesome-project
+     npm install
+     npm run dev
+```
+
+-----
+<!--relax-->
+## らくらく環境構築
+
+- めんどくさい環境構築をスキップできる
+- 公式のテンプレートがいい感じ
+- ESLint/ユニットテスト/E2Eテストの環境構築もしてくれる
+
+-----
+<!--relax-->
+## 手を抜こう
+
+webpack/Browserifyみたいな初期設定がめんどくさいやつはツールに任せて、もっと大事な部分に時間をかけられるように
+
+-----
+<!--houyouryoku-->
 # まとめ
+
+-----
+
+<!--end-->
+
+# Vue.jsは強い
+
+- 💪 少ない学習で大きなパワー
+- 💨 軽くて速い
+- 👐 ライブラリ/ツールでどんな規模にも対応
+
+-----
+<!--end2-->
+# Thank you👍
+
+[@nakajmg](https://twitter.com/nakajmg)
+
+-----
+<!--codegrid-->
+
+## Vue.jsの連載やってます
+
+## 👉 [CodeGrid](http://www.codegrid.net/) 👈

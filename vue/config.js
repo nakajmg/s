@@ -204,5 +204,101 @@ module.exports = {
         layout: 'title',
       })
     },
+    {
+      name: 'vuex',
+      attributes: bg({
+        backface: './img/vuex.png',
+        layout: 'cover',
+        backfaceFilter: 'opacity(1)', 
+      })
+    },
+    {
+      name: 'bg-vuex',
+      attributes: bg({
+        backface: './img/vuex.png',
+        layout: 'bullets', 
+      })
+    },
+    {
+      name: 'bg-vuex-invert',
+      attributes: bg({
+        backface: './img/vuex.png',
+        layout: 'bullets',
+        invert: true
+      })
+    },
+    {
+      name: 'devtools',
+      attributes: bg({
+        backface: './img/pet_echo_kensa_cat.png',
+        layout: 'bullets', 
+      })
+    },
+    {
+      name: 'target',
+      attributes: bg({
+        backface: './img/job_guide_tour.png',
+        layout: 'bullets', 
+      })
+    },
+    {
+      name: 'devtools-component',
+      attributes: bg({
+        backface: './img/devtools_component.png',
+        backfaceFilter: 'opacity(1)',
+        layout: 'title', 
+      })
+    },
+    {
+      name: 'devtools-vuex',
+      attributes: bg({
+        backface: './img/devtools_vuex.png',
+        backfaceFilter: 'opacity(1)',
+        layout: 'bullets', 
+      })
+    },
+    {
+      name: 'relax',
+      attributes: bg({
+        backface: './img/relax_boy.png',
+        layout: 'bullets', 
+      })
+    },
+    {
+      name: 'end',
+      attributes: bg({
+        backface: './img/superman_hero.png',
+        backfaceFilter: 'opacity(.2)',
+        // invert: true,
+        layout: 'bullets'
+      })
+    },
+    {
+      name: 'end2',
+      attributes: bg({
+        backface: './img/gekijou_end_oshimai.png',
+        backfaceFilter: 'opacity(.1)',
+        backfaceSize: 'cover',
+        layout: 'cover',
+        // invert: true
+      })
+    },
+    {
+      name: 'codegrid',
+      attributes: bg({
+        backface: './img/codegrid.png',
+        backfaceFilter: 'opacity(.5)',
+        layout: 'title',
+        invert: true
+      })
+    },
+    {
+      name: '',
+      attributes: bg({
+        backface: './img/',
+        layout: 'cover', 
+      })
+    },
+    
   ]
 }
