@@ -489,7 +489,9 @@ CSS Modulesも使える
 -----
 <!--code-->
 
-```shell
+Y/nで必要な環境をセットアップ
+
+```bash
 $ vue init webpack awesome-project
 
 ? Project name awesome-project
@@ -497,15 +499,14 @@ $ vue init webpack awesome-project
 ? Use ESLint to lint your code? Yes
 ? Pick an ESLint preset AirBNB
 ? Setup unit tests with Karma + Mocha? Yes
-? Setup e2e tests with Nightwatch? Yes
+? Setup e2e tests with Nightwatch? No
 
    vue-cli · Generated "awesome-project".
-
-   To get started:
    
-     cd awesome-project
-     npm install
-     npm run dev
+   To get started:
+    cd awesome-project
+    npm install
+    npm run dev
 ```
 
 -----
