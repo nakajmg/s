@@ -29,3 +29,6 @@
   content: "\"";
 }
 
+[layout] small {
+  font-size: 55%;
+}

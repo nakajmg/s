@@ -149,6 +149,15 @@ module.exports = {
       })
     },
     {
+      name: 'wakaba-invert',
+      attributes: bg({
+        backface: './img/mark_syoshinsya.png',
+        // backfaceSize: 'cover',
+        layout: 'title',
+        invert: true,
+      })
+    },
+    {
       name: 'okane',
       attributes: bg({
         backface: './img/money_tokeru_yen.png',
@@ -261,14 +270,22 @@ module.exports = {
       name: 'relax',
       attributes: bg({
         backface: './img/relax_boy.png',
-        layout: 'bullets', 
+        layout: 'bullets',
+      })
+    },
+    {
+      name: 'relax-invert',
+      attributes: bg({
+        backface: './img/relax_boy.png',
+        layout: 'bullets',
+        invert: true,
       })
     },
     {
       name: 'end',
       attributes: bg({
         backface: './img/superman_hero.png',
-        backfaceFilter: 'opacity(.2)',
+        backfaceFilter: 'opacity(.1)',
         // invert: true,
         layout: 'bullets'
       })
@@ -276,11 +293,11 @@ module.exports = {
     {
       name: 'end2',
       attributes: bg({
-        backface: './img/gekijou_end_oshimai.png',
+        backface: './img/logo.png',
         backfaceFilter: 'opacity(.1)',
-        backfaceSize: 'cover',
+        // backfaceSize: 'cover',
         layout: 'cover',
-        // invert: true
+        invert: true
       })
     },
     {
@@ -292,6 +309,22 @@ module.exports = {
         invert: true
       })
     },
+    {
+      name: 'sponser',
+      attributes: bg({
+        backface: './img/money_fueru.png',
+        layout: 'bullets', 
+      })
+    },
+    {
+      name: 'start',
+      attributes: bg({
+        backface: './img/logo.png',
+        layout: 'cover',
+        invert: true 
+      })
+    },
+    
     {
       name: '',
       attributes: bg({
