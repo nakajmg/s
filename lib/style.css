@@ -32,3 +32,12 @@
 [layout] small {
   font-size: 55%;
 }
+
+[layout="quoted-image"] {
+  justify-content: flex-end;
+  padding-bottom: 2em;
+}
+
+[data-body-bg="quoted-image"] {
+  background: 0 0;
+}
