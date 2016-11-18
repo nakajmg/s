@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>💓 Vue.js</title>
+  <link rel="stylesheet" href="../lib/talkie.min.css">
+  <link rel="stylesheet" href="../lib/talkie-default.min.css">
+  <link rel="stylesheet" href="../lib/style.css">
+  <link rel="stylesheet" href="../lib/monokai_sublime.min.css">
+</head>
+<body>
+
+<% pages.forEach((page) => { %>
+<<%- page.config.tag %> type="<%- page.config.type %>"<% page.config.attributes.forEach((attributes) => { %>
+<%- attributes -%>
+<% }) -%>>
+<%- page.contents %>
+<% if(page.config.note) { -%>
+---
+
+<%- page.config.note %>
+<% } %>
+</<%- page.config.tag %>>
+<% }) %>
+<script src="../lib/highlight.min.js"></script>
+<script src="../lib/talkie.min.js"></script>
+<script src="../lib/app.js"></script>
+</body>
+</html>
