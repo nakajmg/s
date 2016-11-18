@@ -22,6 +22,10 @@ backface="./img/vue.png">
 
 [#shizuoka_js](https://twitter.com/search?q=%23shizuoka_js)
 
+---
+
+こんにちは。今日はVue.jsについて話させてもらいます。
+
 
 </template>
 
@@ -37,7 +41,7 @@ layout="bullets">
 
 
 ---
-.
+
 どうもはじめまして、じまぐです。ピクセルグリッドという会社からやってまいりました。
 フロントエンド・エンジニアという肩書きで、JavaScriptを書いて生計をたてています。
 nakajmgというidで活動しています。
@@ -52,9 +56,9 @@ backface-filter="blur(1px) opacity(.1)"
 backface="./img/logo.png">
 # はなします
 
-- Vue.jsのいいところ
-- サポートライブラリ/ツール
-- そのほか
+- Vue.jsについて
+- プログレッシブ・フレームワーク
+- ライブラリ/ツール紹介
 
 ---
 
@@ -69,18 +73,18 @@ backface-size="contain"
 backface-filter="blur(1px) opacity(.1)"
 backface="./img/logo.png">
 
-# Vue.jsについて
+# Vue.jsとは
 
-- Viewに特化したライブラリ
-- コンポーネント指向
-- Simple & Easy
+- Viewに特化
+- コンポーネントシステム
+- リアクティブなレンダリング
 
 ---
 
-Vue.jsはUIを組み立てるViewの部分に特化したライブラリです。
-アプリケーションを構成するコンポーネントをHTMLのタグのようなレベルにわけて定義することで、再利用性の高いコンポーネントの作成を可能にします。
-そしてAPIなどがとてもシンプルでわかりやすく、とにかく簡単に使えるようになる、というのが特徴です。
-どれくらいシンプルなのか、少しみてみましょう。
+まずはじめに、Vue.jsの特徴について軽くふれておきます。
+Vue.jsはUIを組み立てるようなViewの部分に特化したライブラリです。
+アプリケーションをコンポーネントの単位でわけて定義して、そのコンポーネントを組み合わせることでアプリケーションが作れます。  
+Vue.jsはデータの変更に合わせて、表示も更新されるような、リアクティブなレンダリング機能を持っています。これによってデータの変更を監視して、表示を更新する、みたいなめんどくさい処理を書く必要がありません。  
 
 
 </template>
@@ -94,7 +98,7 @@ backface="./img/pose_english_amazing_man.png">
 
 ---
 
-それではここから、ひたすらVue.jsのいいところを紹介します。
+さて、それではここから、ひたすらVue.jsのいいところを紹介していきますので、おつきあいください。
 
 
 </template>
@@ -108,14 +112,14 @@ backface="./img/mark_syoshinsya.png">
 
 - 🔰 APIが理解しやすい
 - 😆 直感的に書ける（__気持ちいい__）
-- ✨ コードがきれいな状態を保てる ✨
+- ✨ コードがきれいな状態を保ちやすい ✨
 
 ---
 
-まずとにかくシンプルです。APIが理解しやすく、直感的に書けます。
-直感的に使えるフレームワークって書いてて気持ちいいですよね。
+まずVue.jsはとにかくシンプルです。APIが理解しやすくて直感的に書けるんですね。  
+直感的に使えるフレームワークって使っててなんか気持ちいいですよね。
 
-シンプルなので、自然とコードが綺麗な状態を保てます。
+記述がシンプルなので、自然とコードが綺麗な状態っていうのが保てるようになります。
 自分や他人が書いたコードが、あとから読んだときに理解しやすい状態にしておけるってのは大事ですよね。
 
 
@@ -130,11 +134,11 @@ layout="code">
 
 
 ---
-.
-これはVue.jsの説明をするうえでよく登場するデータバインディングのデモです。
-HTML上にはインプットボックスと、その内容を出力するタグの２つがあります。
 
-インプットボックスを編集すると出力も同時に変わります。
+このデモは、Vue.jsの解説とかでよくでてくるデータバインディングのデモです。
+インプットの要素と、その内容を出力する要素の２つがあります。
+
+インプットボックスを編集すると、出力のほうも同時に変わります。
 
 
 </template>
@@ -162,12 +166,11 @@ layout="code">
 
 ---
 
-このデモのコードとしてはこれですべてです。
-わずか十数行でデモのようなリアクティブなプログラムが実装できてしまいます。
+このコードが、今のデモのコードです。この十数行でさっきのようなリアクティブな処理が実装できちゃいます。
 
-このコード、目を通したら何が何をやっているか、なんとなく理解できちゃいますよね？
+このコードなんか目を通したら何が何をやっているか、なんとなく理解できちゃう気がしませんか？
 
-これは正にVue.jsのシンプルさを表していて、だれでもちょっとの学習ですぐに使い始められるフレームワークだと思います。
+それって正にVue.jsのシンプルさとわかりやすさを表していて、ちょっとの学習ですぐにだれでも使えるようなフレームワークなのかなと思ってます。
 
 
 </template>
@@ -186,10 +189,10 @@ backface="./img/mark_syoshinsya.png">
 
 ---
 
-先ほどのコードのように、テンプレートはあらかじめ宣言しておきます。
+さっきのコードのように、テンプレートの部分をあらかじめ宣言しておきます。
 そしてデータの追加や更新をもとに、リアクティブなレンダリングをしてくれます。
 
-純粋なJSのオブジェクトモデルで書けるのも覚えやすさのひとつです。
+Vue.jsって純粋なJavaScriptのオブジェクトモデルで書ける、っていうのもわかりやすさ、覚えやすさのひとつです。
 
 
 </template>
@@ -200,15 +203,16 @@ backface-size="contain"
 backface-filter="blur(0px) opacity(.1)"
 backface="./img/mark_syoshinsya.png"
 invert="true">
-## 学習コストが低いということ
+## 学習コストは低いほうがいい
 
 ときとして軽視されがちだが、走る前の/走ってる  
 プロジェクトにアサインされる人の負担が小さいことに越したことはない
 
 ---
 
-たまーに学習コストを軽視するマッチョな人がいたりするんですが、プロジェクトとかに関わる人たちの負担なんて小さいほうがいいに決まってますよね。
-
+学習コストは低いほうがいい、って何を当たり前のことを言ってるんだ、という感じですが  
+たまーにこの学習コストを軽視するマッチョな人がいたりするんですよね。  
+プロジェクトとかに関わる人たちの負担って小さいほうがいいですよね。
 
 
 </template>
@@ -222,7 +226,9 @@ backface="./img/robot_suit.png">
 
 ---
 
-Vue.jsはフレームワークの中でもかなり学習コストが低い方です。それでも他のフレームワークに比べて劣ってるところはないです。それどころか勝ってすらいます。
+Vue.jsはフレームワークの中でもかなり学習コストが低い方です。jQueryが書けるくらいのJS力があれば、Vue.js使い始めるのは難しくないと思います。
+
+すごい簡単に使えるんですが、それでも他のフレームワークに比べて劣ってる、というわけではないんです。
 
 
 </template>
@@ -269,9 +275,9 @@ Angular 2 + Rx             | **143kb**
 
 ---
 
-この表はVueとReactとAngularのファイルサイズを比較したものです。どの数値もminifyしたあとgzip圧縮されたものです。
+この表はVueとReactとAngularのファイルサイズを比較したものです。この数値はminifyととgzip圧縮を書けた数値です。
 
-Vue.js、軽いですね〜。
+どうでしょう、Vue.js軽いですよね。
 
 
 </template>
@@ -293,9 +299,9 @@ backface="./img/ninja_hashiru.png">
 
 ---
 
-このグラフは、ベンチマークのスコアを比較したもので、数値が低いほどパフォーマンスに優れていることを示しています。AngularよりもReactよりも速いですね。
+軽いだけじゃなくて、速いんです。
 
-Vue.js、速いですね〜。
+このグラフは、レンダリングのベンチマークのスコアを比較したもので、数値が低いほどパフォーマンスが優れていることを示しています。グラフを見るとAngularよりもReactよりも速い、という結果がでています。
 
 
 </template>
@@ -309,7 +315,7 @@ backface="./img/superman_hero.png">
 
 ---
 
-いや〜Vue.js、強いですね〜。
+軽くて速いって、それだけでも結構強くないですか？
 
 
 </template>
@@ -327,11 +333,11 @@ backface="./img/mark_question.png">
 
 ---
 
-「いやいや、軽いのはViewに特化したライブラリだからで、フルスタックなAngularと比較するのはフェアじゃないでしょう」という声が聞こえた気がします。
+でもVue.jsが軽くて速いのってViewの部分に特化したライブラリだからであって、Angularみたいなフルスタックなフレームワークと比較するのってなんかフェアじゃないような印象もありますよね。
 
-そうですね、Vue.jsだけだとAngularが解決できるような領域は解決できないです。中規模〜大規模なアプリケーションなどはVue.jsだけでは立ち向かえません。
+これはまぁその通りという感じで、Vue.jsだけだとAngularが解決できるような領域っていうのは解決できないです。アプリケーションの規模っていうのが大きくなるとVue.jsだけでは立ち向かえないです。
 
-じゃあ結局そんなに強くないのでは、と思うかもしれませんが、そうではないんです。
+そうなると結局Vue.jsってそんなに強くないのでは、と思うかもしれないんですけど、そうではないんですね。
 
 
 </template>
@@ -341,12 +347,13 @@ layout="title"
 backface-size="contain"
 backface-filter="blur(0px) opacity(.1)"
 backface="./img/yurusu_houyouryoku.png">
-## どんな規模にも対応できる<br>フレームワーク
+## 💓Vue.jsはどんな規模にも<br>対応できるフレームワーク
 
 ---
 
-実際のところ、Vue.jsはどんな規模にも対応できるフレームワークなんです。
-Vue.jsがどうやって大規模なアプリなどに対応するか説明する前に、ちょっとだけアプリケーションの話をします。
+実際のところ、Vue.jsはどんな規模にも対応できるフレームワークです。
+じゃあVue.jsがどうやって規模の大きいアプリケーションに対応するかってのを説明する前に、  
+ちょっとだけアプリケーションそのものについて、考えてみます。
 
 
 </template>
@@ -363,7 +370,7 @@ invert="true">
 
 ---
 
-アプリケーションやサービスって、作ってはい終わり、ということは少ないですよね。
+アプリケーションやサービスって、作ってはい終わり、ってことって少ないですよね？  
 
 
 </template>
@@ -376,12 +383,12 @@ backface="./img/hanashiai_business_man.png">
 
 ### 要求に合わせて拡張・変更したい…
 
-🤔「この設計になるならクライアントルーティングしてシングルステートな感じでモジュールもほかのサービスで使いまわせるようにしたほうがヨサソウだな…」
+🤔「ここ変更するならクライアントルーティングしてシングルステートな感じでモジュールもほかのサービスで使いまわせるようにしたほうがヨサソウだな…」
 
 ---
 
 機能追加とかの新しい要求が出てきて、段階的に成長していくものだと思います。  
-拡張したいという希望が必ずといっていいほど出てくるものです。
+アプリケーションの利用者が増えたりしたときって、拡張・改善したいっていう希望が必ずといっていいほど出てくると思います。
 
 
 </template>
@@ -398,8 +405,8 @@ backface="./img/kibunwarui_man.png">
 
 ---
 
-でも使ってるフレームワークによっては、希望するような拡張が難しいことってあると思います。  
-フレームワークごとに解決したい問題も異なりますし、フレームワーク独自の制約みたいなものもありますよね。
+でもアプリケーションを作るのに使ってるフレームワークによっては、希望するような拡張が難しいことってあると思います。  
+フレームワークってそれぞれ解決したい問題も異なりますし、そのフレームワーク独自の制約みたいなものってありますよね。
 
 
 </template>
@@ -418,10 +425,10 @@ invert="true">
 
 ---
 
-アプリケーションやサービスのリリース前の要件にだけ合わせてフレームワークを選ぶと  
-将来的な要求にフレームワークが対応できない、なんてことも起こりえます。
+アプリケーションやサービスの最初の要件にだけ合わせてフレームワークを選んじゃうと、  
+将来的な要求にフレームワークが対応できない、なんてことも起こりえるわけです。
 
-技術選定の段階で先のことも考えるのって大事なんですけど、なかなか上手くはできないです。
+だから技術選定の段階で未来のことも考えておくのって大事なことなんですけど、これなかなか上手くはできないですよね。
 
 
 </template>
@@ -438,10 +445,51 @@ invert="true">
 
 ---
 
-最初に紹介したとおり、Vue.jsはViewに特化したライブラリです。  
-ここにあげているようなキャンペーンサイトやプロトタイプ、小規模なシングルページアプリケーションぐらいまでしか適していません。  
+Vue.jsの話にもどりますが、最初のほうで紹介したとおり、Vue.jsはViewの部分に特化したライブラリです。  
+この中だとキャンペーンサイトやプロトタイプ、小規模なシングルページアプリケーションぐらいまでがVue.jsの得意な範囲です。
 
-中規模以上のアプリケーションにVue.jsだけで立ち向かおうとすると火傷します。
+中規模以上のアプリケーションにVue.jsだけで立ち向かおうとすると火傷すると思います。ただしこれはVue.js単体で使ったときの話なんです。
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="quoted-image"
+backface-size="contain"
+backface-filter="opacity(1)"
+backface="./img/progressive_framework.png">
+
+
+<blockquote>
+<a href="https://docs.google.com/presentation/d/1zQ3Frm3DxSw_qY-KEuykkIUREO-ueFbOyMd1Kd8nqKE/edit#slide=id.g5fc474681_041">https://docs.google.com/presentation/d/1zQ3Frm3DxSw_qY-KEuykkIUREO-ueFbOyMd1Kd8nqKE/edit#slide=id.g5fc474681_041</a>
+</blockquote>
+
+---
+
+Vue.jsの作者のEvan氏はアプリケーションの段階っていうのを、この図のように６つの領域にわけています。  
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="bullets"
+backface-size="contain"
+backface-filter="opacity(.2)"
+backface="./img/progressive_framework.png">
+## ６つの領域
+
+- Declarative Rendering
+- Component System
+- Client-Side Routing
+- Large Scale State Management
+- Build System
+- Clinet-Server Data Persistence
+
+---
+
+宣言的なレンダリング、コンポーネントシステム、クライアントサイドルーティング、状態管理、ビルドシステム、クライアントとサーバのデータ永続化と。  
+
+Vue.jsだけを使った場合だと、この図でいうコンポーネントシステムのところまでをカバーしてます。
 
 
 </template>
@@ -454,8 +502,8 @@ backface="./img/mark_question.png">
 ## あらゆる規模に対応？<br>どうやって？
 
 ---
-ではどうやってVue.jsであらゆる規模に対応するのか。  
-Vue.jsのトップページを見てみましょう。
+じゃあVue.jsがどうやってあらゆる規模に対応するのかって話です。  
+ちょっとVue.jsのトップページを見てみましょう。
 
 
 </template>
@@ -469,9 +517,9 @@ backface="./img/progressive.png">
 
 ---
 
-Vue.jsのトップページを見ると「Progressive Framework」という単語がでてきます。
-これは作者のEvan氏が提唱するフレームワークの概念です。
-このプログレッシブフレームワークっていったいなんなんでしょう。
+Vue.jsのトップページを見ると「Progressive Framework」っていう単語がでてきています。
+これは作者のEvan氏が提唱しているフレームワークの概念なんです。 
+このプログレッシブフレームワークっていったいなにかってことなんですが
 
 
 </template>
@@ -492,8 +540,58 @@ backface="./img/taiiku_bridge.png">
 
 ---
 
-プログレッシブフレームワークとは、「アプリケーションの段階的な要求の変化に対応できて、規模に合わせて必要なだけ拡張/縮小できる柔軟性をもつフレームワーク」のことです。  
-先ほどもいったとおり、アプリケーションは作って終わりということはなく、運用を続けて機能の追加などが行われます。  
+Evan氏はプログレッシブフレームワークを「アプリケーションの段階的な要求の変化に対応できて、規模に合わせて必要なだけスケールできる柔軟性をもったフレームワーク」と定義しています。  
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/mark_question.png">
+
+## 最初からフルスタックなのを<br>使えばいいのでは？
+
+---
+
+でも段階的じゃなくて、もう全部最初からAngularのようなフルスタックな物を採用しておけば対応できるじゃん。って思うかもしれませんが、それでいいかっていうとそんなわけないですよね。
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="cover"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/tsukareta_business_man.png"
+invert="true">
+
+## その選択が<br>誰かを不幸にするかも
+
+規模に合ってないようなフレームワークの選択が開発の妨げとなり誰かを不幸にするかもしれない
+
+---
+
+例えば、jQueryで十分なようなページをAngularみたいなフルスタックなフレームワークで作るようなことってやりたくないですよね。
+
+でもアプリケーションの先のことを考えると、いろいろとカバーできるものがビジネス的に求められるってのも理解できます。
+
+じゃあ最初はjQueryで作っておいて、必要になったら別のフレームワークで作り直して、また拡張が必要になったらもっと高機能なフレームワークで作り直すとか、そんなのもやりたくないですよね。
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/family_happy.png">
+# 💓Vue.jsはみんなを<br>ハッピーにしたい
+
+---
+
+このプログレッシブフレームワークって、Vue.jsを使う人達をハッピーにしたいっていう考えの形なのかなと自分は思っています。
 
 
 </template>
@@ -503,13 +601,12 @@ layout="title"
 backface-size="contain"
 backface-filter="blur(0px) opacity(.1)"
 backface="./img/kougu_bako.png">
-### Vue.jsをサポートする<br>ライブラリ/ツールを使って対応
+## Vue.jsをサポートする<br>ライブラリ/ツールを使って<br>あらゆる規模に対応できる
 
 ---
+じゃあVue.jsがどうやってあらゆる規模に対応するかというと、Vue.jsをサポートするライブラリやツールによって対応します。
 
-Vue.jsは、Vue.jsをサポートするライブラリやツールの存在によって、ただのフレームワークではなく、プログレッシブなフレームワークになります。
-
-Vue.jsをサポートするライブラリやツールはいろいろとあるのですが、特にメジャーなものを紹介します
+サポートライブラリやツールはいろいろあるんですが、その中でもよく使うメジャーなものを紹介します。
 
 
 </template>
@@ -529,14 +626,15 @@ backface="./img/kougu_bako.png">
 
 ---
 
-ルーティングが必要になったらvue-routerを、
-Fluxのような状態管理が必要になったらvuexを導入するといったように  
-アプリケーションの規模に適したライブラリを導入することで、規模に対応します。
+vue-routerはクライアントサイドのルーティングライブラリで、  
+vuexはFluxのようなアプリケーションの状態管理をするためのライブラリです。  
 
-vue-loaderとvueifyは規模が大きくなるにつれて複雑になりがちな、コンポーネントを管理しやすくする開発環境を整えてくれるツールです。
-vue-devtoolsはChromeのdevtoolsの拡張で、Vue.jsでのアプリケーション開発中のデバッグに大いに役立ちます。
+アプリケーションの規模が大きくなって、コンポーネントの管理などが難しくなってきたら  
+vue-loaderやvueifyといったビルドシステムを使います。
 
-色々いれたら結局重くなるのでは、と思うかもしれません
+vue-devtoolsはChromeのエクステンションなんですが、インストールしておくとVue.jsでの開発中のデバッグ作業がとても楽になります。
+
+その他にも色々とライブラリやツールが用意されています。
 
 
 </template>
@@ -553,8 +651,23 @@ backface="./img/ninja_hashiru.png">
 </blockquote>
 
 ---
+最初の方にVue.jsは軽い、という話をしましたが、色々いれたら結局重くなるのでは、と思うかもしれません。これはVue本体とvue-routerとvuexを足したファイルサイズなんですが、それでもとっても軽いですね。
 
-が、Vue本体とvue-routerとvuexを足しても26kbです。軽いですね。
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/mark_question.png">
+
+## Reactも同じような<br>感じじゃない？
+
+---
+フロントエンドに詳しい人であれば、これまでのプログレッシブフレームワークの話を聞いて「なんかそれReactも同じような感じじゃない？」て思ったかもしれません。
+
+Vue.jsとReactで異なるのは、ライブラリやツールを公式で用意しているかどうかという点です。
 
 
 </template>
@@ -564,11 +677,11 @@ layout="title"
 backface-size="contain"
 backface-filter="blur(0px) opacity(.1)"
 backface="./img/kougu_bako.png">
-## 公式のライブラリ/ツールが<br>充実している
+## 公式がライブラリ/ツールを<br>提供している
 
 ---
 
-さきほどのリストで紹介したのはほんの一部ですが、公式が提供しているライブラリやツールが本当に充実しています。
+さきほどのリストで紹介したのはほんの一部ですが、公式が提供しているライブラリやツールが本当に充実しています。それがVue.jsがプログレッシブフレームワークを名乗っている理由でもあります。
 
 
 </template>
@@ -585,12 +698,10 @@ Vue.js本体のアップデートにライブラリ/ツールも追従
 
 ---
 
-この公式が提供していることって大事だと思っています。  
+この公式が提供していることって大事だと思っていて、  
 公式が提供しているものであれば、本体のアップデートに合わせてほかのライブラリも更新されますよね。
 
-サードパーティ製のツールだと、本体のアップデートに追従できない/しない可能性が公式のものより高いです。
-
-そういった点いろいろと安心感があります。
+サードパーティ製のものだと、本体のアップデートに追従できなかったり、しない可能性が公式のものよりは高いと思います。
 
 
 </template>
@@ -604,8 +715,8 @@ backface="./img/mark_question.png">
 
 ---
 
-覚えやすくて簡単だといいましたが、紹介したライブラリやツールみたいなものも覚える必要があって  
-結局学習コスト高いのでは？なんて思うかもしれません。
+学習コストの話にもどりますが、覚えやすくて簡単だといったんですが、いま紹介したライブラリやツールみたいなものも覚える必要があって  
+結局学習コストがそれほど低くないのでは？と感じるかもしれません
 
 
 </template>
@@ -616,17 +727,33 @@ backface-size="contain"
 backface-filter="opacity(.2)"
 backface="./img/tatemono_kaidan.png"
 invert="true">
-
 ## 必要なものを<br>必要なときに覚える
 全部を覚える必要はない。要件に応じて使うものを必要なときに導入し、その都度覚えればいい☝🏻
 
 ---
 
-Angularのようなフルスタックと呼ばれるようなフレームワークであれば、使うのに必要な学習コストはフレームワークが持っている機能と比例して高くなります。  
-なぜかというと、ある機能がアプリケーションにいる・いらないにかかわらず、フレームワークの全体像を理解することが求められるからです。
+ですが、いま紹介したようなライブラリやツールが、絶対に必要ってわけではないんですね。
 
-Vue.jsの場合、アプリケーションの規模によって、何を使い何を使わないか柔軟に自由に選択できます。  
-選択したものをそのときごとに覚えればよいのです。
+フルスタックと呼ばれるようなフレームワークであれば、使うのに必要な学習コストってフレームワークが持っている機能と比例して高くなっていきます。  
+なぜかというと、フレームワークのある機能が、作ってるアプリケーションに必要か必要じゃないかにかかわらず、フレームワークの全体像を理解することが求められるんですよね。
+
+でもVue.jsの場合、アプリケーションの規模によって、何を使い何を使わないかっていうのは柔軟に自由に選択できます。  
+だから選択したものをその都度覚えればいいんです。
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/mark_question.png">
+
+## 何から始めればいい？
+
+---
+
+じゃあVue.js使う上で、何から始めればいいのかっていう話なんですが
 
 
 </template>
@@ -645,10 +772,8 @@ Vue.jsがどういうものか、どう使えばいいかは
 
 ---
 
-でもVue.jsで何ができるかわかんないよ〜という方、安心してください。  
-Vue.jsがどんなものでどう使えばいいかは公式のガイドに乗っております。
-
-まずはこのガイドを読んでみてください。
+まずは公式にあるこのガイドを読んでみてください。  
+Vue.jsがどんなものでどう使えばいいかというのが全て乗っています。
 
 
 </template>
@@ -668,8 +793,9 @@ backface="./img/setsumeisyo_man.png">
 
 ---
 
-Vue.jsは関連するライブラリやツールを含め、とにかくドキュメントが手厚く親切に書かれています。
-コミュニティによる翻訳も活発で、覚えるのに困ることはないと言ってもいいでしょう。
+使ってる途中に何かわからないことがあっても、Vue.jsはドキュメントが手厚く親切にかかれているので、大概の問題はドキュメントで解決しちゃいます。
+
+ドキュメントが親切でも、英語で書かれてると尻込みするなーという人も大丈夫です。
 
 
 </template>
@@ -687,11 +813,9 @@ backface="./img/sensu_hinomaru.png">
 
 ---
 
-英語が苦手でも大丈夫です。自分が知る限りですが、Vue.jsのコアチームには日本人の方が3名います。日本語の情報も得やすいですし、フィードバックを伝えやすいです。
+自分が知る限りですが、Vue.jsのコアチームには日本人の方が3人います。おかげで最新の情報も得やすいですし、フィードバックも伝えやすいと思います。
 
-日本語翻訳のプロジェクトもあり、これは誰でも参加できます。Vue.js 2.0のドキュメントの翻訳には、自分もコントリビュートしました。
-
-また、日本ユーザ向けのSlackのグループもあります。
+日本語翻訳のプロジェクトがあって、これには誰でも参加できます。自分もVue.jsの2.0のドキュメントの翻訳に少し参加しました。ライブラリ本体へのコントリビュートが難しくても、こういった部分でコントリビュートしやすいというのもよい点ですね。
 
 
 </template>
@@ -700,15 +824,12 @@ backface="./img/sensu_hinomaru.png">
 layout="title"
 backface-size="contain"
 backface-filter="blur(0px) opacity(.1)"
-backface="./img/mark_question.png">
-## 継続性は？
-
-🤔「AngularはGoogle、ReactはFacebook、うしろに大企業がいてなんか大丈夫そう。Vueは個人が作ってるみたいだけどどうなの？」
+backface="./img/yurusu_houyouryoku.png">
+# まとめ
 
 ---
 
-Vue.jsはどこかの企業が作ってるわけではなく、個人によって作られたOSSです。  
-AngularやReactのように大企業が主導しているわけではないので、継続性が心配になる人もいるかと思います。
+さてこのへんで一旦、ここまでをまとめてみましょう。
 
 
 </template>
@@ -716,19 +837,23 @@ AngularやReactのように大企業が主導しているわけではないの�
 <template type="text/x-markdown"
 layout="bullets"
 backface-size="contain"
-backface-filter="blur(0px) opacity(.1)"
-backface="./img/money_fueru.png">
-## 💰スポンサーがついてる💰
+backface-filter="opacity(.1)"
+backface="./img/superman_hero.png">
 
-- [👆9000＄/month](https://www.patreon.com/evanyou)
-- フルタイムOSS
-- [Laravel](https://laravel.com/)のデフォルトに
+# Vue.jsは強い
+
+- 💪 少ない学習で大きなパワー
+- 💨 軽くて速い
+- 👐 ライブラリ/ツールでどんな規模にも対応
+- 📖 ドキュメントがすごい
+- 🇯🇵 日本語コミュニティの存在
 
 ---
 
-ですがそういった心配はあまり必要ありません。Vue.jsの作者はいろいろな企業や個人に支援されており、フルタイムでOSSの開発にあたっています。
+Vue.jsがなんか強そうというのは感じてもらえたかなーと思います。
 
-少し前の話ですが、PHPフレームワークのLaravelのデフォルトのJSフレームワークになったことが話題になりました。
+軽くて速くて、どんな規模にも対応できる、そんなパワーを少ない学習でも得ることができます。  
+ドキュメントもしっかりしてますし、日本語のコミュニティがあるので、リソースに困ることはあまりないかと思います。
 
 
 </template>
@@ -736,14 +861,17 @@ backface="./img/money_fueru.png">
 <template type="text/x-markdown"
 layout="title"
 backface-size="contain"
-backface-filter="blur(0px) opacity(.1)"
-backface="./img/superman_hero.png">
-## コミュニティが強いOSSは強い
+backface-filter="opacity(.2)"
+backface="./img/mezamashidokei.png"
+invert="true">
+## ❓🤔❓
 
----
-
-このようにVue.jsは特定の一企業ではなく、Vue.jsを使っている企業や個人が支えています。  
-こういったコミュニティが強いOSSは強いOSSだと個人的には思います。
+if (🕒) {  
+　　location.hash = [#ライブラリツールの紹介](#46)  
+}  
+else {  
+　　location.hash = [#その他のリソース](#65)  
+}  
 
 
 </template>
@@ -753,11 +881,12 @@ layout="title"
 backface-size="contain"
 backface-filter="blur(0px) opacity(.1)"
 backface="./img/kougu_bako.png">
+
 ## ライブラリ/ツールの紹介
 
 ---
 
-され、ここからはさきほど紹介した公式ライブラリとツールの紹介をします。
+さて、ここからはさきほど紹介した公式ライブラリとツールの特徴や使い方を解説します。
 
 
 </template>
@@ -782,7 +911,7 @@ ReduxなどのFlux系ライブラリとVue.jsを組み合わせることもで�
 </template>
 
 <template type="text/x-markdown"
-layout="cover"
+layout="quoted-image"
 backface-size="contain"
 backface-filter="opacity(1)"
 backface="./img/vuex.png">
@@ -794,8 +923,9 @@ backface="./img/vuex.png">
 ---
 
 これはVuexのデータフローを表した図です。  
-アプリケーションは単一の状態をもち、状態はActionsのcommitをきっかけにMutationsによって変更されます。  
-状態に変更があるとコンポーネントは自動的にレンダリングし直します。
+アプリケーションはStateという単一の状態をもっていて、この状態はMutationsによってのみ変更されます。  
+ほかの経路では状態が変更できないようになっています。  
+状態に変更があると自動的にコンポーネントがレンダリングされ直します。
 
 
 </template>
@@ -815,11 +945,11 @@ backface="./img/vuex.png">
 
 ---
 
-Vuexを導入すると、先ほどのようにデータフローが一方向になり、コンポーネント同士のやり取りのようなものは不要になります。
+Vuexを導入すると、先ほどのようにデータフローが一方向になって、アプリケーション全体の見通しがよくなります。
 
-アプリケーションの状態は単一のStateとして持つことになるので、常にStateを参照すれば最新の状態が得られることになります。
+アプリケーションの状態は単一のStateとして持つことになるので、Stateの信頼性が保証されるようになります。Stateを参照すれば常に最新の状態が得られることになります。
 
-Vuexを導入すると状態の変化が明示的になることで、vue-devtoolsでの状態監視が行えるようになります。
+Vuexを導入すると状態変化が明示的になることで、このあと紹介するvue-devtoolsでの状態監視が行えるようなるという利点があります。
 
 
 </template>
@@ -838,11 +968,11 @@ invert="true">
 
 ---
 
-Vuexが有用なライブラリであることは間違いないと思いますが、規模の小さいシンプルなアプリケーションであれば使う必要はないでしょう。
+Vuexが有用なライブラリであることは間違いないと思いますが、規模の小さなシンプルなアプリケーションであれば使う必要はないでしょう。
 
-Vuexを導入することで冗長になり、逆にあまり効果のない制約だけが生まれることになります。
+Vuexを導入することでコードが冗長になって、あまり効果のない制約だけが生まれることになります。
 
-小さいアプリケーションであれば、メディエーターパターンのような、イベントバスを介したやり取りで十分です。
+小さなアプリケーションであれば、メディエーターパターンのような、イベントバスを介したやり取りで十分かと思います。
 
 
 </template>
@@ -860,11 +990,39 @@ backface="./img/pet_echo_kensa_cat.png">
 
 ---
 
-vue-devtoolsはVue.jsアプリのデバッグ用のChromeの拡張です。Chromeにインストールすると、次のようなことができるようになります。
+vue-devtoolsはVue.jsアプリのデバッグ用のChrome拡張です。Chromeにインストールすると、
 
-コンポーネントの状態を確認したり、ルーティングの確認をしたりできます。
 
-また、さきほど言ったようなVuexによる状態変化を追跡して状態のタイムトラベル機能も実現できます。
+</template>
+
+<template type="text/x-markdown"
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/pet_echo_kensa_cat.png">
+### コンポーネントの状態確認
+
+![](./img/devtools_component.png)
+
+---
+
+コンポーネントの状態を確認したり、
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/pet_echo_kensa_cat.png">
+### 状態変化の追跡とタイムトラベル
+
+![](./img/devtools_vuex.png)
+
+---
+
+また、さきほど言ったようなVuexによる状態変化を追跡して状態のタイムトラベル機能が実現できます。
 
 
 </template>
@@ -894,29 +1052,7 @@ vue-devtoolsで確認してみましょう。incrementとdecrementをするとMu
 layout="bullets"
 backface-size="contain"
 backface-filter="blur(0px) opacity(.1)"
-backface="./img/pet_echo_kensa_cat.png">
-### コンポーネントの状態確認
-
-![](./img/devtools_component.png)
-
-
-</template>
-
-<template type="text/x-markdown"
-layout="bullets"
-backface-size="contain"
-backface-filter="blur(0px) opacity(.1)"
-backface="./img/pet_echo_kensa_cat.png">
-### 状態変化の追跡とタイムトラベル
-
-![](./img/devtools_vuex.png)
-
-
-</template>
-
-<template type="text/x-markdown"
-layout="bullets">
-
+backface="./img/kougu_bako.png">
 ## [vue-loader](https://github.com/vuejs/vue-loader)/[vueify](https://github.com/vuejs/vueify)
 
 - webpack/Browserifyでバンドル
@@ -924,7 +1060,9 @@ layout="bullets">
 
 ---
 
-vue-loaderとvueifyは、アプリケーションのJavaScriptをwebpackもしくはbrowserifyにってバンドルをするためのツールです。これを導入すると、Vue.jsでのコンポーネント開発がより便利に簡単にきれいにできます。
+次にvue-loaderとvueifyです。この２つは、アプリケーションのJavaScriptをバンドルをするためのツールです。また、これを導入するとVue.jsでのコンポーネント開発がより便利に簡単ににできるようになります。
+
+具体的に言うと、コンポーネントを.vueという拡張子のファイルで作っていくことになります。
 
 
 </template>
@@ -952,16 +1090,19 @@ layout="code">
 
 ---
 
-コンポーネントは.vueという拡張子のファイルで作成し、このファイルの中にコンポーネントのtemplate/style/scriptの３つを記述します。
+.vueファイルでは、このように一つのファイルにコンポーネントのtemplate/style/scriptの３つを記述します。
 
-１コンポーネント１ファイルという、わかりやすい単位で作れるようになります。この形式であればコンポーネントに使うスタイルがあちこちにちらばることもありません。管理も簡単になるでしょう。
+１コンポーネント１ファイルという、わかりやすい単位で作れるようになります。  
+この形式であればコンポーネントに使うスタイルやテンプレートがまとめられるので、管理が簡単になります。
 
 
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
-
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/kougu_bako.png">
 ## .vueファイル
 
 - JS：ES2015で書ける（babel）
@@ -971,10 +1112,11 @@ layout="bullets">
 
 ---
 
-.vueファイルではデフォルトでES2015での記述ができます。また、SassやStylusといったプリプロセッサも簡単に適用することができます。
+.vueファイルではデフォルトでJavaScriptをES2015で記述できます。  
+またCSSは、SassやStylusといったプリプロセッサも簡単に使うことができます。
 
 さらに、.vueファイルではCSSのスタイルをコンポーネントに閉じ込めることができます。  
-これはScoped CSSのエミュレートやCSS ModulesといったものでCSSをカプセル化します。
+これはScoped CSSやCSS ModulesといったものでCSSをカプセル化します。
 
 
 </template>
@@ -1005,11 +1147,10 @@ export default {
 
 ---
 
-CSS Modulesの例です。styleの属性としてmoduleというのを指定します。  
-すると$styleという変数にクラス名などが格納されます。
+これはCSS Modulesの例です。styleの属性としてmoduleというのを指定します。  
+すると$styleという特別な変数にクラスなどが格納されます。
 
-この変数はJSからも参照できます。すごい。
-
+templateでは$style.redのように、定義したクラスを参照します。このコードがコンパイルされると、$styleという変数名がアプリケーションの中でユニークな値と置き換えられ、ほかのクラスと衝突しなくなります。
 
 
 </template>
@@ -1028,29 +1169,50 @@ Scoped CSSやCSS Modulesを使うことによって、
 
 ---
 
-Scoped CSSやCSS Modulesを使うことによって、  
-コンポーネントのスタイルがほかのスタイルに影響を与えなくなります。
+Scoped CSSやCSS Modulesを使うと何が嬉しいかというと、  
+コンポーネントのスタイルがほかのスタイルに影響を与えなくなるんですね。
 
-つまりもうCSSのクラス名で悩まなくてもいいんです。
+つまりもうCSSのクラス名で悩まなくてもいいってことなんです。すごくないですか？
 
 
 </template>
 
 <template type="text/x-markdown"
-layout="bullets">
-
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/kougu_bako.png">
 ## [vue-cli](https://github.com/vue-cli)
 
 - スキャフォールド用のコマンドラインツール
 - vue-loader/vueifyの環境構築
 - 開発用のローカルサーバの構築
-- `$ vue init webpack awesome-project`
 
 ---
 
-最後にvue-cliです。これはコマンドラインツールで、Vue.jsを使ったアプリケーションの環境構築を爆速にしてくれます。
+最後にvue-cliです。これはコマンドラインツールで、Vue.jsを使ったアプリケーションの環境構築を簡単にしてくれます。
 
-例えばvue-loaderを使ったプロジェクトを作るときはこのようなコマンドを実行します。
+
+</template>
+
+<template type="text/x-markdown"
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/computer_girl.png">
+### webpackのテンプレートを使ってみる
+
+`$ vue init webpack awesome-project`
+
+- A full-featured Webpack
+- vue-loader setup with hot reload
+- linting
+- testing & css extraction.
+
+
+---
+
+例えばwebpackを使ったプロジェクトを作るときはこんなコマンドを実行します。
 
 
 </template>
@@ -1080,9 +1242,9 @@ $ vue init webpack awesome-project
 
 ---
 
-こんな感じにコマンドラインで何を使うか質問されるので、YesかNoで答ると、セットアップしてくれます。あとはnpm installを実行するだけです。
+するとこんな感じにコマンドラインで何を使うか質問されます。質問にYesかNoで答えると、Yesと答えたやつをセットアップしてくれます。
 
-npm run devを実行すると開発用のローカルサーバが立ち上がります。
+セットアップが終わったら、npm installしてnpm run devを実行すると開発用のローカルサーバを立ち上げることができます。
 
 （時間があればあらかじめインストールしといたやつでrun devする）
 
@@ -1093,8 +1255,7 @@ npm run devを実行すると開発用のローカルサーバが立ち上がり
 layout="bullets"
 backface-size="contain"
 backface-filter="blur(0px) opacity(.1)"
-backface="./img/relax_boy.png">
-# 楽できる
+backface="./img/syokuji_computer_woman.png">
 
 - めんどくさい環境構築をスキップできる
 - 公式のテンプレートがいい感じ（カスタマイズも可能）
@@ -1102,9 +1263,9 @@ backface="./img/relax_boy.png">
 
 ---
 
-vue-cliを使うとめんどくさい環境構築がスキップできます。公式で用意しているテンプレートもいい感じです。
+このようにvue-cliを使うとめんどくさい環境構築がスキップできます。公式で用意しているテンプレートもいい感じです。
 
-Lintやテストの環境も作ってくれて至れり尽くせりです。公式のテンプレートをForkすればテンプレートのカスタマイズもできます。
+Lintやテストの環境も作ってくれて至れり尽くせりですね。公式のテンプレートをForkすればテンプレートのカスタマイズもできます。
 
 
 </template>
@@ -1113,18 +1274,18 @@ Lintやテストの環境も作ってくれて至れり尽くせりです。公�
 layout="bullets"
 backface-size="contain"
 backface-filter="blur(0px) opacity(.1)"
-backface="./img/relax_boy.png"
-invert="true">
+backface="./img/relax_girl.png">
 # 手を抜こう
 
 めんどくさいやつはツールに任せて  
-もっと大切な部分に時間を😂
+もっと本質的な部分に集中する💪
 
 ---
 
 フロントエンドのツール、なんか色々あるしどんどん難しくなってる感じありますよね。
 
-設定とか、やりたくてやってるわけじゃないことですし、手を抜けるとこは抜いていきましょう。
+設定とかって、やりたくてやってるわけじゃないことですし、手を抜けるとこは抜いていきましょう。  
+さて、これでライブラリとツールの紹介はおしまいです。
 
 
 </template>
@@ -1133,12 +1294,52 @@ invert="true">
 layout="title"
 backface-size="contain"
 backface-filter="blur(0px) opacity(.1)"
-backface="./img/yurusu_houyouryoku.png">
-# まとめ
+backface="./img/kougu_bako.png">
+## その他のリソース
+
+[awesome-vue](https://github.com/vuejs/awesome-vue/)
 
 ---
 
-さて、色々と紹介しましたがまとめましょう。
+紹介した以外にも、いろいろなライブラリやツールがあります。  
+Vue.jsに関するリソースは公式非公式に関わらず、このawesome-vueというリポジトリにまとまってます。  
+ここにはプラグインもあれば、誰かが作った便利そうなコンポーネントなんかもあります。  
+なにか作る前に、ちょっとここを探してみるとぴったりなものが見つかるかもしれません。
+
+</template>
+
+<template type="text/x-markdown"
+layout="bullets"
+backface-size="contain"
+backface-filter="blur(0px) opacity(1)"
+backface="./img/logo.png">
+
+---
+
+さて、ここまでVue.jsについて色々と紹介してきましたがどうでしょう？なんかヨサソウなフレームワークだなーと思ってくれたなら幸いです。
+
+ところで、フロントエンドのフレームワークって移り変わりがとても激しいですよね。
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/mark_question.png">
+## 使い続けられる？
+
+🤔「AngularはGoogle、ReactはFacebook、うしろに大企業がいてなんか大丈夫そう。Vueは個人が作ってるみたいだけどどうなの？」
+
+---
+
+少し前まで「これはずっと使えそう」と思ってたものが、今はもう誰も使ってないなんて状況がありがちなのがフロントエンドのフレームワークです。
+
+AngularであればGoogle、ReactであればFacebookといった大企業がそれぞれうしろについているので、なんとなく使い続けられそうなイメージを持てますよね。
+
+Vue.jsはどこかの企業が作ったわけではなく、個人によって作られたOSSです。  
+そういった点でフレームワークの継続性みたいなのが心配になる人もいるかと思います。
 
 
 </template>
@@ -1146,20 +1347,53 @@ backface="./img/yurusu_houyouryoku.png">
 <template type="text/x-markdown"
 layout="bullets"
 backface-size="contain"
-backface-filter="opacity(.1)"
-backface="./img/superman_hero.png">
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/money_fueru.png">
+## 💰スポンサーがついてる💰
 
-# Vue.jsは強い
-
-- 💪 少ない学習で大きなパワー
-- 💨 軽くて速い
-- 👐 ライブラリ/ツールでどんな規模にも対応
+- [👆9000＄/month](https://www.patreon.com/evanyou)
+- フルタイムOSS
+- [Laravel](https://laravel.com/)のデフォルトにもなった
 
 ---
 
-Vue.jsがなんか強そうというのは感じてもらえたかなーと思います。
+ですがそういった心配はあまり必要ないのかなと、個人的には思っています。  
+というのも、Vue.jsの作者はいろいろな企業や個人に金銭的な支援をされていて、フルタイムでOSSの開発にあたっているそうです。
 
-軽くて速くて、どんな規模にも対応できる、そんなパワーを少ない学習でも得ることができます。
+あとは少し前の話になりますが、PHPフレームワークのLaravelのデフォルトのJSフレームワークになったことも話題になりましたね。
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/superman_hero.png">
+## コミュニティが強いOSSは強い
+
+---
+
+Vue.jsは特定の一企業ではなく、Vue.jsを使っている企業や個人の支持によって支えられています。  
+日本でも翻訳プロジェクトに色々な人が参加してますし、実際に案件に投入している例も見かけられるようになってきました。  
+コミュニティが強いOSSって強いものだと個人的には思います。ですので、保証は全くできませんが、長く使い続けられるフレームワークだと思います。
+
+
+</template>
+
+<template type="text/x-markdown"
+layout="title"
+backface-size="contain"
+backface-filter="blur(0px) opacity(.1)"
+backface="./img/starter_man.png"
+invert="true">
+# 使ってみよう
+
+[https://vuejs.org/](https://vuejs.org/)
+
+---
+
+ここまで話を聞いて、ちょっと使ってみようかなと思った人はすぐに公式サイトにアクセスしましょう。Vue.jsの始め方はとても簡単です。
 
 
 </template>
@@ -1179,8 +1413,8 @@ invert="true">
 
 ---
 
-Vue.jsの始め方は簡単です。この一行を追加してください。  
-もしかしたらあなたの人生が変わるかもしれません。
+HTMLにこのscriptを一行追加してください。  
+もしかしたら、あなたの人生が変わるほどの何かを得られるかもしれません。
 
 
 </template>
@@ -1191,7 +1425,7 @@ backface-size="contain"
 backface-filter="opacity(.1)"
 backface="./img/logo.png"
 invert="true">
-# 💓Thank you
+# 👍Thanks
 
 [@nakajmg](https://twitter.com/nakajmg)
 
