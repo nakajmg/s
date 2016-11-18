@@ -43,6 +43,14 @@ module.exports = {
       })
     },
     {
+      name: 'cover-vue-cover',
+      attributes: bg({
+        layout: 'bullets',
+        backface: './img/logo.png',
+        backfaceFilter: 'blur(0px) opacity(1)'
+      })
+    },
+    {
       name: 'cover-progressive',
       attributes: bg({
         invert: true,
@@ -105,6 +113,13 @@ module.exports = {
       attributes: bg({
         backface: './img/kougu_bako.png',
         layout: 'title'
+      })
+    },
+    {
+      name: 'tool-list',
+      attributes: bg({
+        backface: './img/kougu_bako.png',
+        layout: 'bullets'
       })
     },
     {
@@ -217,7 +232,7 @@ module.exports = {
       name: 'vuex',
       attributes: bg({
         backface: './img/vuex.png',
-        layout: 'cover',
+        layout: 'quoted-image',
         backfaceFilter: 'opacity(1)', 
       })
     },
@@ -269,16 +284,16 @@ module.exports = {
     {
       name: 'relax',
       attributes: bg({
-        backface: './img/relax_boy.png',
+        backface: './img/relax_girl.png',
         layout: 'bullets',
       })
     },
     {
       name: 'relax-invert',
       attributes: bg({
-        backface: './img/relax_boy.png',
+        backface: './img/relax_girl.png',
         layout: 'bullets',
-        invert: true,
+        // invert: true,
       })
     },
     {
@@ -324,14 +339,76 @@ module.exports = {
         invert: true 
       })
     },
-    
+    {
+      name: 'progressive_framework',
+      attributes: bg({
+        backface: './img/progressive_framework.png',
+        backfaceFilter: 'opacity(1)',
+        layout: 'quoted-image',
+      })
+    },
+    {
+      name: 'progressive_framework-bg',
+      attributes: bg({
+        backface: './img/progressive_framework.png',
+        backfaceFilter: 'opacity(.2)',
+        layout: 'bullets'
+      })
+    },
+    {
+      name: 'hukou',
+      attributes: bg({
+        backface: './img/tsukareta_business_man.png',
+        layout: 'cover',
+        invert: true
+      })
+    },
+    {
+      name: 'siawase',
+      attributes: bg({
+        backface: './img/family_happy.png',
+        layout: 'title',
+      })
+    },
+    {
+      name: 'jikan',
+      attributes: bg({
+        backface: './img/mezamashidokei.png',
+        layout: 'title',
+        backfaceFilter: 'opacity(.2)',
+        invert: true
+      })
+    },
+    {
+      name: 'tukatte',
+      attributes: bg({
+        backface: './img/starter_man.png',
+        layout: 'title',
+        invert: true
+      })
+    },
+    {
+      name: 'raku',
+      attributes: bg({
+        backface: './img/syokuji_computer_woman.png',
+        layout: 'bullets',
+      })
+    },
+    {
+      name: 'cli',
+      attributes: bg({
+        backface: './img/computer_girl.png',
+        layout: 'bullets',
+      })
+    },
     {
       name: '',
       attributes: bg({
         backface: './img/',
-        layout: 'cover', 
+        layout: 'title', 
       })
     },
+    
     
   ]
 }
