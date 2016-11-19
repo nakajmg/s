@@ -16,8 +16,8 @@ new Vue({
     },
     counter: {
       template: `<div>
-        <button @click="increment">increment</button>
         <button @click="decrement">decrement</button>
+        <button @click="increment">increment</button>
       </div>
       `,
       methods: Vuex.mapActions(['increment', 'decrement'])

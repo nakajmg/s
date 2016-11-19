@@ -11,8 +11,7 @@
 
 -----
 
-# <img src="https://avatars3.githubusercontent.com/u/1995370?v=3&s=160" style="border-radius: 50%;">
-
+<img src="https://avatars3.githubusercontent.com/u/1995370?v=3&s=160" style="border-radius: 50%;">
 
 - [@nakajmg](https://twitter.com/nakajmg)（じまぐ）
 - [株式会社ピクセルグリッド](https://www.pxgrid.com/)
@@ -400,7 +399,7 @@ Evan氏はプログレッシブフレームワークを「アプリケーショ�
 
 -----
 <!--siawase-->
-# 💓Vue.jsはみんなを<br>ハッピーにしたい
+# 💓Vue.jsはみんなを<br>ハッピーにする
 
 ---
 
@@ -588,7 +587,7 @@ Vue.jsがなんか強そうというのは感じてもらえたかなーと思�
 ## ❓🤔❓
 
 if (🕒) {  
-　　location.hash = [#ライブラリツールの紹介](#46)  
+　　location.hash = [#ライブラリ/ツールの紹介](#46)  
 }  
 else {  
 　　location.hash = [#その他のリソース](#65)  
